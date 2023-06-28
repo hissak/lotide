@@ -34,29 +34,29 @@ const eqArrays = function(array1, array2) {
 
 
 const middle = function(input) {
-  let outputArray = []
-  if(input.lenngth <= 2) {
-    return output
-  } else if(input.length > 2 && input.length % 2 === 0) {
-    outputArray.push(input[input.length / 2 - 1], input[input.length / 2])
+  let outputArray = [];
+  if (input.lenngth <= 2) {
+    return outputArray;
+  } else if (input.length > 2 && input.length % 2 === 0) {
+    outputArray.push(input[input.length / 2 - 1], input[input.length / 2]);
   } else if (input.length > 2 && input.length % 2 !== 0) {
-    outputArray.push(input[Math.ceil(input.length / 2 - 1)])
+    outputArray.push(input[Math.ceil(input.length / 2 - 1)]);
   }
   console.log(outputArray);
   return outputArray;
-}
+};
 
-assertArraysEqual(middle([1]), [])
-assertArraysEqual(middle([1, 2]), [])
+assertArraysEqual(middle([1]), []);
+assertArraysEqual(middle([1, 2]), []);
 
-middle([1, 2, 3]) // => [2]
-assertArraysEqual(middle([1, 2, 3]), [2])
+middle([1, 2, 3]); // => [2]
+assertArraysEqual(middle([1, 2, 3]), [2]);
 
-middle([1, 2, 3, 4, 5]) // => [3]
-assertArraysEqual(middle([1, 2, 3, 4, 5]), [3])
+middle([1, 2, 3, 4, 5]); // => [3]
+assertArraysEqual(middle([1, 2, 3, 4, 5]), [3]);
 
-middle([1, 2, 3, 4]) // => [2, 3]
-assertArraysEqual(middle([1, 2, 3, 4]), [2, 3])
+middle([1, 2, 3, 4]); // => [2, 3]
+assertArraysEqual(middle([1, 2, 3, 4]), [2, 3]);
 
-middle([1, 2, 3, 4, 5, 6]) // => [3, 4]
-assertArraysEqual(middle([1, 2, 3, 4, 5, 6]), [3, 4])
+middle([1, 2, 3, 4, 5, 6]); // => [3, 4]
+assertArraysEqual(middle([1, 2, 3, 4, 5, 6]), [3, 4]);
