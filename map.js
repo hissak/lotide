@@ -6,7 +6,7 @@ const map = function(array, callback) {
     results.push(callback(item));
   }
   return results;
-}
+};
 
 
 const results1 = map(words, word => word[0]);
@@ -14,7 +14,7 @@ const results1 = map(words, word => word[0]);
 const results2 = map(words, word => word[1]);
 //console.log(results2);
 const results3 = map(words, word => word[2]);
-console.log(results3)
+console.log(results3);
 
 const assertArraysEqual = function(arrayA, arrayB) {
   if (eqArrays(arrayA, arrayB)) {
@@ -49,8 +49,8 @@ const eqArrays = function(array1, array2) {
 };
 
 assertArraysEqual(results1, [ 'g', 'c', 't', 'm', 't' ]
-)
+);
 assertArraysEqual(results2, [ 'r', 'o', 'o', 'a', 'o' ]
-)
+);
 assertArraysEqual(results3, [ 'o', 'n', undefined, 'j', 'm' ]
-)
+);
