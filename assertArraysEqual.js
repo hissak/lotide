@@ -30,6 +30,7 @@ const eqArrays = function(array1, array2) {
   return truthyFalsey;
 };
 
+module.exports = eqArrays
 
 assertArraysEqual([1, 2, 3], [1, 2, 3]);
 assertArraysEqual(["1", "2", "3"], ["1", "2", 3]);
