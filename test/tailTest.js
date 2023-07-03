@@ -13,12 +13,12 @@ const assert = require('chai').assert;
 
 describe("tail", () => {
   it("returns true for [1] and []", () => {
-    assert.strictEqual(assertArraysEqual(tail([1]), []), '✅✅✅ Assertion Passed: [] === []');
+    assert.deepEqual(tail([1]), []);
   });
   it("returns [2] for [1, 2]", () => {
-    assert.strictEqual(assertArraysEqual(tail([1, 2]), [2]), '✅✅✅ Assertion Passed: [2] === [2]');
+    assert.deepEqual(tail([1, 2]), [2]);
   });
   it("returns [2, 3] for [1, 2, 3]", () => {
-    assert.strictEqual(tail([1, 2, 3]), [2, 3]);
+    assert.deepEqual(tail([1, 2, 3]), [2, 3]);
   });
 });
