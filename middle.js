@@ -1,35 +1,36 @@
 
-const assertArraysEqual = function(arrayA, arrayB) {
-  if (eqArrays(arrayA, arrayB)) {
-    console.log(`✅✅✅ Assertion Passed: ${arrayA} === ${arrayB}`);
-  } else if (!eqArrays(arrayA, arrayB)) {
-    console.log(`🛑🛑🛑 Assertion Failed: ${arrayA} !==  ${arrayB}`);
-  }
-};
+// const assertArraysEqual = function(arrayA, arrayB) {
+//   if (eqArrays(arrayA, arrayB)) {
+//     console.log(`✅✅✅ Assertion Passed: ${arrayA} === ${arrayB}`);
+//   } else if (!eqArrays(arrayA, arrayB)) {
+//     console.log(`🛑🛑🛑 Assertion Failed: ${arrayA} !==  ${arrayB}`);
+//   }
+// };
+const eqArrays = require('./eqArrays');
+const assertArraysEqual = require('./assertArraysEqual');
 
+// const eqArrays = function(array1, array2) {
+//   let newArray = [];
+//   let truthyFalsey = true;
+//   if (array1.length === array2.length) {
+//     for (let i = 0; i < array1.length && i < array2.length; i++) {
+//       if (array1[i] === array2[i]) {
+//         newArray.push(true);
+//       } else {
+//         newArray.push(false);
+//       }
+//     }
+//   } else if (array1.length !== array2.length) {
+//     return truthyFalsey = false;
+//   }
 
-const eqArrays = function(array1, array2) {
-  let newArray = [];
-  let truthyFalsey = true;
-  if (array1.length === array2.length) {
-    for (let i = 0; i < array1.length && i < array2.length; i++) {
-      if (array1[i] === array2[i]) {
-        newArray.push(true);
-      } else {
-        newArray.push(false);
-      }
-    }
-  } else if (array1.length !== array2.length) {
-    return truthyFalsey = false;
-  }
-
-  for (let x = 0; x < newArray.length; x++) {
-    if (!newArray[x]) {
-      return truthyFalsey = false;
-    }
-  }
-  return truthyFalsey;
-};
+//   for (let x = 0; x < newArray.length; x++) {
+//     if (!newArray[x]) {
+//       return truthyFalsey = false;
+//     }
+//   }
+//   return truthyFalsey;
+// };
 
 
 
@@ -46,17 +47,6 @@ const middle = function(input) {
   return outputArray;
 };
 
-assertArraysEqual(middle([1]), []);
-assertArraysEqual(middle([1, 2]), []);
+module.exports  = middle
 
-middle([1, 2, 3]); // => [2]
-assertArraysEqual(middle([1, 2, 3]), [2]);
 
-middle([1, 2, 3, 4, 5]); // => [3]
-assertArraysEqual(middle([1, 2, 3, 4, 5]), [3]);
-
-middle([1, 2, 3, 4]); // => [2, 3]
-assertArraysEqual(middle([1, 2, 3, 4]), [2, 3]);
-
-middle([1, 2, 3, 4, 5, 6]); // => [3, 4]
-assertArraysEqual(middle([1, 2, 3, 4, 5, 6]), [3, 4]);
