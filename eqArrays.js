@@ -29,9 +29,9 @@ const eqArrays = function(array1, array2) {
   }
   return truthyFalsey;
 };
-console.log(eqArrays(["1", "2", "3"], ["1", "2", 3]));
-assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true);
-assertEqual(eqArrays(["1", "2", "3"], ["1", "2", 3]), true);
-assertEqual(eqArrays([1, 2, 3], [3, 2, 1]), true);
+// console.log(eqArrays(["1", "2", "3"], ["1", "2", 3]));
+// assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true);
+// assertEqual(eqArrays(["1", "2", "3"], ["1", "2", 3]), true);
+// assertEqual(eqArrays([1, 2, 3], [3, 2, 1]), true);
 
 module.exports = eqArrays

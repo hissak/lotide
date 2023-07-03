@@ -1,7 +1,12 @@
 
 const tail = function(array) {
-  let newArray = array.slice(1);
-  console.log(newArray);
+  let newArray;
+  if (array.length <= 1) {
+    return newArray = [];
+  } else {
+    newArray = array.slice(1);
+    return newArray;
+  };
 };
 
 
