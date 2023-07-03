@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@hissak/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "A mini clone of the lodash repo created for education purposes.",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -18,7 +18,10 @@
     "type": "git",
     "url": "git+https://github.com/hissak/lotide.git"
   },
-  "author": "",
+  "author": {
+    "name" : "Hassan Issak",
+    "email" : "hassan.a.issak@gmail.com"
+  },
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/hissak/lotide/issues"
